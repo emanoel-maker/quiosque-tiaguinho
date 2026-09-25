@@ -401,7 +401,7 @@
             container.innerHTML = Object.keys(categorias).map(catNome => {
                 const produtosDaCat = categorias[catNome];
                 // Se o usuário digitou algo na busca, forçamos a expansão do tópico
-                const estaAberta = buscaAtiva || categoriasAbertas[catNome] !== false;
+                const estaAberta = buscaAtiva || categoriasAbertas[catNome] !== true;
 
                 return `
                     <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
